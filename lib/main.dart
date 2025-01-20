@@ -24,9 +24,8 @@ class _firstPageState extends State<firstPage> {
           children: [
             Center(
               child: CircleAvatar(
-                  radius: 80.0,
-                  backgroundImage: NetworkImage(
-                      'https://media.istockphoto.com/id/517401259/photo/her-own-kind-of-beautiful.jpg?s=1024x1024&w=is&k=20&c=OuGtIjrit6AHIB2ze7wOaLZeF5ggPf6ASPkduSk_hxM=')),
+                  radius: 100.0,
+                  backgroundImage: AssetImage('assets/images/ibra.jpeg')),
             ),
             Text(
               'Ipruz',
@@ -77,11 +76,12 @@ class _firstPageState extends State<firstPage> {
             Card(
               margin: EdgeInsets.symmetric(
                 vertical: 10,
-                horizontal: 20,
+                horizontal: 25,
               ),
-              child: ListTile(
+              child: ListTile(subtitle: Text('ipruz App'),
                 leading: Icon(
                   Icons.email,
+
                   color: Colors.teal,
                 ),
                 title: Text(
